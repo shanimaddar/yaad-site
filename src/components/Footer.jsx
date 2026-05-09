@@ -17,7 +17,9 @@ export default function Footer() {
           >
             054-6254125
           </a>
-          <span>services@yaad-clean.co.il</span>
+          <a href="mailto:services@yaad-clean.co.il" className="hover:text-brand-turquoise transition-colors font-medium">
+              <span>services@yaad-clean.co.il</span>
+          </a>
         </div>
 
         {/* Copyright */}
