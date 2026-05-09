@@ -81,6 +81,7 @@ export default function ContactForm() {
                 <option value="" disabled>בחר סוג שירות</option>
                 <option value="building">בניין מגורים</option>
                 <option value="office">משרד</option>
+                <option value="other">אחר</option>
               </select>
             </div>
 

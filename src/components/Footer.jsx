@@ -11,13 +11,13 @@ export default function Footer() {
         {/* Contact info */}
         <div className="flex flex-col items-center gap-1 text-sm">
           <a
-            href="tel:+972-XX-XXXXXXX"
+            href="tel:+972-54-6254125"
             className="hover:text-brand-turquoise transition-colors font-medium"
             dir="ltr"
           >
-            05X-XXXXXXX
+            054-6254125
           </a>
-          <span>info@yaad-clean.co.il</span>
+          <span>services@yaad-clean.co.il</span>
         </div>
 
         {/* Copyright */}

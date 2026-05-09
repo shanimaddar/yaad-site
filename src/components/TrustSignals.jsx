@@ -9,7 +9,7 @@ const signals = [
   {
     icon: Clock,
     title: "אמינות",
-    description: "מגיעים בזמן, מסיימים בזמן. אתם יכולים לסמוך עלינו — תמיד.",
+    description: "מגיעים בזמן, מסיימים בזמן. אתם יכולים לסמוך עלינו - תמיד.",
   },
   {
     icon: UserCheck,

@@ -10,7 +10,7 @@ export default function Hero() {
         </div>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-5 drop-shadow-md">
-          הסטנדרט החדש בניקיון
+         הסטנדרט החדש בניקיון
           <br />
           <span className="text-brand-turquoise">מהבית ועד למשרד</span>
         </h1>
@@ -24,13 +24,13 @@ export default function Hero() {
             href="#contact"
             className="bg-white text-brand-navy font-black text-lg px-9 py-4 rounded-full shadow-xl hover:bg-brand-turquoise hover:text-white transition-colors duration-200 w-full sm:w-auto text-center"
           >
-            קבל הצעת מחיר
+            לקבלת הצעת מחיר
           </a>
           <a
             href="#services"
             className="border-2 border-white text-white font-bold text-lg px-9 py-4 rounded-full hover:bg-white hover:text-brand-navy transition-colors duration-200 w-full sm:w-auto text-center"
           >
-            גלה את השירותים
+            השירותים שלנו
           </a>
         </div>
 
