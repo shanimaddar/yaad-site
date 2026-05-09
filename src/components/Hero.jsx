@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-3xl mx-auto">
 
         <div className="flex justify-center mb-6">
-          <Logo variant="light" className="h-auto drop-shadow-xl" style={{ width: '22rem', maxWidth: '85vw' }} />
+          <Logo variant="light" className="h-36 sm:h-44 drop-shadow-xl" />
         </div>
 
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-5 drop-shadow-md">
