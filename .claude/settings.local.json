@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(npm run *)",
+      "Bash(mkdir -p \"C:\\\\Users\\\\ShaniMadar\\\\Desktop\\\\claude\\\\landing page\\\\.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(taskkill //F //IM node.exe)",
+      "PowerShell(winget --version 2>&1)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\GitHub CLI\"; cd \"C:\\\\Users\\\\ShaniMadar\\\\Desktop\\\\claude\\\\landing page\"; git init; git add .; git commit -m \"Initial commit: יעד שירותי ניקיון landing page\" 2>&1)"
+    ]
+  }
+}
