@@ -6,11 +6,21 @@ function ServiceCard({ icon: Icon, title, audience, bullets, accentColor }) {
       className="bg-white rounded-2xl shadow-xl p-8 flex flex-col gap-5 border-t-4"
       style={{ borderTopColor: accentColor }}
     >
-      <div
-        className="w-14 h-14 rounded-xl flex items-center justify-center"
-        style={{ backgroundColor: accentColor + '18' }}
-      >
-        <Icon size={28} style={{ color: accentColor }} strokeWidth={1.8} />
+      {/* שורת האייקון והתגית למעלה */}
+      <div className="flex justify-between items-start">
+        <div
+          className="w-14 h-14 rounded-xl flex items-center justify-center"
+          style={{ backgroundColor: accentColor + '18' }}
+        >
+          <Icon size={28} style={{ color: accentColor }} strokeWidth={1.8} />
+        </div>
+
+        <div
+          className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full"
+          style={{ backgroundColor: accentColor + '18', color: accentColor }}
+        >
+          {audience}
+        </div>
       </div>
 
       <h3 className="text-2xl font-black text-brand-navy">{title}</h3>
@@ -26,13 +36,6 @@ function ServiceCard({ icon: Icon, title, audience, bullets, accentColor }) {
           </li>
         ))}
       </ul>
-
-      <div
-        className="mt-auto inline-block text-sm font-semibold px-4 py-1.5 rounded-full"
-        style={{ backgroundColor: accentColor + '18', color: accentColor }}
-      >
-        {audience}
-      </div>
     </div>
   )
 }
