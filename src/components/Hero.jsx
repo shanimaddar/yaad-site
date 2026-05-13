@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-white/85 font-medium mb-10 max-w-xl mx-auto leading-relaxed">
-          יעד שירותי ניקיון מספקת פתרונות אחזקה וניקיון מתקדמים לבניינים יוקרתיים ולמשרדים המעוניינים בסביבת עבודה מנצחת.
+         יעד שירותי ניקיון מספקת פתרונות  מתקדמים למשרדים פרטיים, בנייני משרדים ובנייני מגורים המעוניינים בסטנדרט ניקיון גבוה ושירות מנצח.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -26,12 +26,7 @@ export default function Hero() {
           >
             לקבלת הצעת מחיר
           </a>
-          <a
-            href="#services"
-            className="border-2 border-white text-white font-bold text-lg px-9 py-4 rounded-full hover:bg-white hover:text-brand-navy transition-colors duration-200 w-full sm:w-auto text-center"
-          >
-            השירותים שלנו
-          </a>
+         
         </div>
 
       </div>

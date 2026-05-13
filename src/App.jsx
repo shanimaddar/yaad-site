@@ -7,11 +7,11 @@ import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
 import PrivacyModal from './components/PrivacyModal'
+import TermsModal from './components/TermsModal'
 
 export default function App() {
   const [privacyOpen, setPrivacyOpen] = useState(false)
-  const openPrivacy = () => setPrivacyOpen(true)
-  const closePrivacy = () => setPrivacyOpen(false)
+  const [termsOpen, setTermsOpen] = useState(false)
 
   return (
     <div className="font-sans" dir="rtl">
@@ -20,11 +20,15 @@ export default function App() {
         <Hero />
         <Services />
         <TrustSignals />
-        <ContactForm onOpenPrivacy={openPrivacy} />
+        <ContactForm onOpenPrivacy={() => setPrivacyOpen(true)} />
       </main>
-      <Footer onOpenPrivacy={openPrivacy} />
-      <CookieBanner onOpenPrivacy={openPrivacy} />
-      <PrivacyModal open={privacyOpen} onClose={closePrivacy} />
+      <Footer
+        onOpenPrivacy={() => setPrivacyOpen(true)}
+        onOpenTerms={() => setTermsOpen(true)}
+      />
+      <CookieBanner onOpenPrivacy={() => setPrivacyOpen(true)} />
+      <PrivacyModal open={privacyOpen} onClose={() => setPrivacyOpen(false)} />
+      <TermsModal open={termsOpen} onClose={() => setTermsOpen(false)} />
     </div>
   )
 }
