@@ -46,7 +46,8 @@ export default function Footer({ onOpenPrivacy, onOpenTerms }) {
         </button>
         <span className="hidden sm:inline" aria-hidden="true">·</span>
         <span>
-          נגישות לפי תקן WCAG 2.1 ·{' '}
+          האתר נבנה תוך מאמץ לעמוד בדרישות נגישות בסיסיות לפי תקן WCAG 2.1.
+          לפניות בנושא נגישות:{' '}
           <a
             href="mailto:yaad4541@gmail.com"
             className="hover:text-white transition-colors underline underline-offset-2"
