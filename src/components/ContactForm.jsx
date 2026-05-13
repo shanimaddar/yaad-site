@@ -92,7 +92,7 @@ export default function ContactForm({ onOpenPrivacy }) {
         <form
           onSubmit={handleSubmit}
           className="flex flex-col gap-5 bg-gray-50 rounded-2xl p-8 shadow-lg"
-          noValidate
+          
         >
           {/* Error banner */}
           {status === 'error' && (

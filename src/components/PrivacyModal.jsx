@@ -116,8 +116,8 @@ export default function PrivacyModal({ open, onClose }) {
             <h3 className="font-black text-brand-navy text-base mb-2">8. צור קשר</h3>
             <p>
               לשאלות או פניות בנוגע למדיניות פרטיות זו, ניתן לפנות אלינו בדוא"ל:{' '}
-              <a href="mailto:services@yaad-clean.co.il" className="text-brand-azure underline">
-                services@yaad-clean.co.il
+              <a href="mailto:yaad4541@gmail.com" className="text-brand-azure underline">
+                yaad4541@gmail.com
               </a>
             </p>
           </section>
