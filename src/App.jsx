@@ -14,7 +14,7 @@ export default function App() {
   const [termsOpen, setTermsOpen] = useState(false)
 
   return (
-    <div className="font-sans" dir="rtl">
+    <div className="font-sans w-full overflow-x-hidden" dir="rtl">
       <Header />
       <main>
         <Hero />
