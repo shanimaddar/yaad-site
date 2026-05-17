@@ -12,7 +12,7 @@ export default function Header() {
         
 
         <a
-          href="tel:+972-XX-XXXXXXX"
+          href="tel:+972-54-6254125"
           className="flex items-center gap-2 bg-white text-brand-navy font-bold text-sm px-5 py-2.5 rounded-full hover:bg-brand-turquoise hover:text-white transition-colors duration-200 shadow-md"
         >
           <Phone size={16} />

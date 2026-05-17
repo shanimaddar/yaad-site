@@ -9,7 +9,8 @@
       "Bash(taskkill /F /IM node.exe)",
       "Bash(taskkill //F //IM node.exe)",
       "PowerShell(winget --version 2>&1)",
-      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\GitHub CLI\"; cd \"C:\\\\Users\\\\ShaniMadar\\\\Desktop\\\\claude\\\\landing page\"; git init; git add .; git commit -m \"Initial commit: יעד שירותי ניקיון landing page\" 2>&1)"
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\GitHub CLI\"; cd \"C:\\\\Users\\\\ShaniMadar\\\\Desktop\\\\claude\\\\landing page\"; git init; git add .; git commit -m \"Initial commit: יעד שירותי ניקיון landing page\" 2>&1)",
+      "mcp__Claude_in_Chrome__computer"
     ]
   }
 }
