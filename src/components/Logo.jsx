@@ -7,6 +7,9 @@ export default function Logo({ variant = 'light', className = '' }) {
         src="./logo-yaad.png"
         alt="יעד שירותי ניקיון"
         className={className}
+        width="200"
+        height="80"
+        fetchpriority={variant === 'light' ? 'high' : 'auto'}
         style={{
           width: 'auto',
           display: 'block',

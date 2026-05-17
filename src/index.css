@@ -1,3 +1,9 @@
+/* Self-hosted Heebo — ללא תלות ב-Google Fonts */
+@import '@fontsource/heebo/400.css';
+@import '@fontsource/heebo/700.css';
+@import '@fontsource/heebo/800.css';
+@import '@fontsource/heebo/900.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

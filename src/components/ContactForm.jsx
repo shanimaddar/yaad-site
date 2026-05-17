@@ -48,10 +48,21 @@ export default function ContactForm({ onOpenPrivacy }) {
   const [honeypot, setHoneypot] = useState('')          // נסתר — בוטים ממלאים, בני-אדם לא
   const [status, setStatus]   = useState('idle')        // idle | loading | success | error
   const loadTime              = useRef(Date.now())
+  const sectionRef            = useRef(null)
 
-  // טעינת reCAPTCHA v3 בטעינת הקומפוננטה
+  // טעינת reCAPTCHA v3 רק כשהמשתמש מגיע לסקשן הטופס
   useEffect(() => {
-    loadRecaptcha(RECAPTCHA_SITE_KEY)
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          loadRecaptcha(RECAPTCHA_SITE_KEY)
+          observer.disconnect()
+        }
+      },
+      { rootMargin: '200px' }
+    )
+    if (sectionRef.current) observer.observe(sectionRef.current)
+    return () => observer.disconnect()
   }, [])
 
   function handleChange(e) {
@@ -130,7 +141,7 @@ export default function ContactForm({ onOpenPrivacy }) {
 
   // ── הטופס ─────────────────────────────────────────────────────────────────
   return (
-    <section id="contact" className="bg-white py-20 px-4">
+    <section id="contact" className="bg-white py-20 px-4" ref={sectionRef}>
       <div className="max-w-xl mx-auto">
 
         <div className="text-center mb-12">
