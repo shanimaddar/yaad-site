@@ -19,4 +19,11 @@
   * {
     box-sizing: border-box;
   }
+
+  /* מסתיר את ה-badge של reCAPTCHA v3 — מותר לפי תנאי גוגל כל עוד יש אזכור טקסטואלי בדף */
+  .grecaptcha-badge {
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 }

@@ -142,7 +142,7 @@ export default function ContactForm({ onOpenPrivacy }) {
         <form onSubmit={handleSubmit} className="flex flex-col gap-5 bg-gray-50 rounded-2xl p-8 shadow-lg">
 
           {/* Honeypot — נסתר מבני-אדם, בוטים ממלאים */}
-          <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', opacity: 0, pointerEvents: 'none' }}>
+          <div aria-hidden="true" style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
             <input type="text" name="website" value={honeypot}
               onChange={e => setHoneypot(e.target.value)} tabIndex={-1} autoComplete="off" />
           </div>
